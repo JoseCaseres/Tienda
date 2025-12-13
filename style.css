@@ -178,3 +178,8 @@ body {
     width: 55px;
     height: 55px;
 }
+.logo-header {
+    width: 260px;   /* Puedes cambiar el tamaño */
+    display: block;
+    margin: 0 auto 20px auto;
+}
