@@ -16,12 +16,17 @@
         <a href="productos.html">Todos los productos</a>
         <a href="contacto.html">Contacto</a>
     </nav>
+    
+    <div class="selector-idioma">
+    <span onclick="cambiarIdioma('es')">ES</span> |
+    <span onclick="cambiarIdioma('en')">EN</span>
+</div>
 </header>
 
 <!-- Banner -->
 <section class="banner">
-    <h2>🔥 PROMOCIÓN ESPECIAL 🔥</h2>
-    <p>Descuentos en software premium por tiempo limitado.</p>
+    <h2 data-text="banner_titulo">🔥 PROMOCIÓN ESPECIAL 🔥</h2>
+    <p data-text="banner_texto">Descuentos en software premium por tiempo limitado.</p>
 </section>
 
 <!-- Buscador -->
@@ -30,7 +35,7 @@
 </div>
 
 <!-- Productos destacados -->
-<h2 class="titulo-productos">Productos destacados</h2>
+<h2 class="titulo-productos" data-text="productos_destacados">Productos destacados</h2>
 
 <div class="productos">
 
@@ -56,6 +61,18 @@
     </div>
 
 </div>
+<script>
+function cambiarIdioma(idioma) {
+    fetch('idiomas.json')
+        .then(response => response.json())
+        .then(data => {
+            document.querySelectorAll("[data-text]").forEach(function(elemento) {
+                let clave = elemento.getAttribute("data-text");
+                elemento.textContent = data[idioma][clave];
+            });
+        });
+}
+</script>
 
 </body>
 </html>
