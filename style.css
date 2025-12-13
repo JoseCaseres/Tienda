@@ -1,53 +1,61 @@
-/* Estilo general */
-body {
-    font-family: Arial, sans-serif;
-    padding: 0;
-    margin: 0;
-    background: #f4f4f4;
-}
-
-/* Header estilo profesional */
-.header {
-    text-align: center;
-    padding: 25px;
-    background: #1e1e2f; /* fondo oscuro elegante */
+/* Banner promocional */
+.banner {
+    background: linear-gradient(45deg, #1e1e2f, #3c3c5c);
     color: white;
-}
-
-.titulo {
-    font-size: 42px;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-.subtitulo {
-    font-size: 18px;
-    color: #dddddd;
-    margin-top: 0;
-}
-
-.menu {
-    margin-top: 15px;
-}
-
-.menu a {
-    color: #00c8ff;
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 18px;
-}
-
-.menu a:hover {
-    text-decoration: underline;
-}
-
-/* Contenido principal */
-h2 {
     text-align: center;
+    padding: 40px;
+    margin-bottom: 30px;
+    border-bottom: 5px solid #00c8ff;
+}
+
+.banner h2 {
+    font-size: 32px;
+    margin: 0;
+}
+
+.banner p {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+/* Buscador */
+.buscador-container {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+#buscador {
+    width: 60%;
+    padding: 12px;
+    font-size: 18px;
+    border: 2px solid #1e1e2f;
+    border-radius: 10px;
+}
+
+/* Productos en inicio */
+.titulo-productos {
+    text-align: center;
+    font-size: 28px;
     margin-top: 30px;
 }
 
-p {
+.productos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.producto {
+    background: white;
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
     text-align: center;
-    font-size: 18px;
+    box-shadow: 0px 0px 10px #ccc;
+}
+
+.producto img {
+    width: 100%;
+    border-radius: 10px;
 }
