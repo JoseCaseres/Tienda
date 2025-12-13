@@ -179,9 +179,8 @@ body {
     height: 55px;
 }
 .logo-header {
-    width: 80%;
-    max-width: 500px;
+    width: 550px;
     height: auto;
     display: block;
-    margin: 0 auto 10px auto;
+    margin: 0 auto 25px auto;
 }
