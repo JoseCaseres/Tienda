@@ -184,3 +184,85 @@ body {
     display: block;
     margin: 0 auto 25px auto;
 }
+/* Productos Principales */
+.productos-principales {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.titulo-principales {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.grid-principales {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.card-producto {
+    width: 240px;
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 12px;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.15);
+    transition: 0.3s;
+}
+
+.card-producto:hover {
+    transform: translateY(-6px);
+    box-shadow: 0px 6px 22px rgba(0,0,0,0.25);
+}
+
+.img-producto {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.categoria-producto {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0;
+}
+
+.precio-box {
+    margin: 10px 0;
+}
+
+.precio-actual {
+    font-size: 20px;
+    font-weight: bold;
+    color: #1e1e2f;
+}
+
+.precio-antes {
+    font-size: 14px;
+    color: #888;
+    text-decoration: line-through;
+    margin-left: 8px;
+}
+
+.descuento {
+    font-size: 14px;
+    color: #ff4d4d;
+    font-weight: bold;
+    margin-left: 8px;
+}
+
+.btn-producto {
+    display: inline-block;
+    background: #1e1e2f;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.btn-producto:hover {
+    background: #00c8ff;
+}
