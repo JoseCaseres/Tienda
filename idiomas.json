@@ -1,0 +1,23 @@
+{
+    "es": {
+        "titulo": "Full Software",
+        "subtitulo": "Los mejores programas digitales al mejor precio",
+        "inicio": "Inicio",
+        "productos": "Productos",
+        "contacto": "Contacto",
+        "banner_titulo": "🔥 PROMOCIÓN ESPECIAL 🔥",
+        "banner_texto": "Descuentos en software premium por tiempo limitado.",
+        "productos_destacados": "Productos destacados"
+    },
+
+    "en": {
+        "titulo": "Full Software",
+        "subtitulo": "The best digital software at the best price",
+        "inicio": "Home",
+        "productos": "Products",
+        "contacto": "Contact",
+        "banner_titulo": "🔥 SPECIAL PROMOTION 🔥",
+        "banner_texto": "Discounts on premium software for a limited time.",
+        "productos_destacados": "Featured Products"
+    }
+}
