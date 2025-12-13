@@ -61,6 +61,29 @@
     </div>
 
 </div>
+    <script>
+// Detectar país automáticamente
+fetch("https://ipapi.co/json/")
+  .then(response => response.json())
+  .then(data => {
+    console.log("País detectado:", data.country);
+
+    // Lista de países hispanohablantes
+    const paises_es = ["AR","BO","CL","CO","CR","CU","DO","EC","SV","GQ","GT","HN","MX","NI","PA","PY","PE","ES","UY","VE"];
+
+    // Si el país está en la lista → Español, sino → Inglés
+    if (paises_es.includes(data.country)) {
+        cambiarIdioma("es");
+    } else {
+        cambiarIdioma("en");
+    }
+  })
+  .catch(error => {
+    console.log("No se pudo detectar país, usando español por defecto");
+    cambiarIdioma("es");
+  });
+</script>
+
 <script>
 document.addEventListener("DOMContentLoaded", function() {
     window.cambiarIdioma = function(idioma) {
