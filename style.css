@@ -179,7 +179,7 @@ body {
     height: 55px;
 }
 .logo-header {
-    width: 380px;   /* ← Aumenta solo el ancho */
+    width: 450px;   /* ← Aumenta solo el ancho */
     height: auto;
     display: block;
     margin: 0 auto 15px auto;
