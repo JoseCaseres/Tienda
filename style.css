@@ -1,0 +1,53 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    background: #f4f4f4;
+}
+
+/* Header estilo profesional */
+.header {
+    text-align: center;
+    padding: 25px;
+    background: #1e1e2f; /* fondo oscuro elegante */
+    color: white;
+}
+
+.titulo {
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.subtitulo {
+    font-size: 18px;
+    color: #dddddd;
+    margin-top: 0;
+}
+
+.menu {
+    margin-top: 15px;
+}
+
+.menu a {
+    color: #00c8ff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+/* Contenido principal */
+h2 {
+    text-align: center;
+    margin-top: 30px;
+}
+
+p {
+    text-align: center;
+    font-size: 18px;
+}
