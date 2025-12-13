@@ -121,3 +121,17 @@ body {
 .btn:hover {
     background: #00c8ff;
 }
+.selector-idioma {
+    margin-top: 10px;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.selector-idioma span {
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.selector-idioma span:hover {
+    text-decoration: underline;
+}
