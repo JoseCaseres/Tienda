@@ -179,9 +179,8 @@ body {
     height: 55px;
 }
 .logo-header {
-    width: 300px;      /* Puedes subir a 350 o 400 si quieres */
-    height: auto;      /* Mantiene proporción */
+    width: 380px;   /* ← Aumenta solo el ancho */
+    height: auto;
     display: block;
-    margin: 0 auto 20px auto;
-    border-radius: 8px; /* Suaviza bordes del rectángulo */
+    margin: 0 auto 15px auto;
 }
