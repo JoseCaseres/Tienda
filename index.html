@@ -62,17 +62,21 @@
 
 </div>
 <script>
-function cambiarIdioma(idioma) {
-    fetch('idiomas.json')
-        .then(response => response.json())
-        .then(data => {
-            document.querySelectorAll("[data-text]").forEach(function(elemento) {
-                let clave = elemento.getAttribute("data-text");
-                elemento.textContent = data[idioma][clave];
+document.addEventListener("DOMContentLoaded", function() {
+    window.cambiarIdioma = function(idioma) {
+        fetch('idiomas.json')
+            .then(response => response.json())
+            .then(data => {
+                document.querySelectorAll("[data-text]").forEach(function(elemento) {
+                    const clave = elemento.getAttribute("data-text");
+                    if (data[idioma][clave]) {
+                        elemento.textContent = data[idioma][clave];
+                    }
+                });
             });
-        });
-}
+    }
+});
 </script>
-
+    
 </body>
 </html>
